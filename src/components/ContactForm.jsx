@@ -27,8 +27,7 @@ return (
     <Formik initialValues={{
             name: '',
             number: ''
-        }
-    }
+        }}
     validationSchema={contactSchema}
     onSubmit={handleSubmit} >
         <Form className={css.form}>
@@ -42,5 +41,7 @@ return (
     </Formik>
 )
 }
+
+
 
 export default ContactForm;
