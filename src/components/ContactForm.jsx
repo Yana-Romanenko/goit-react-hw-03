@@ -33,7 +33,7 @@ return (
         <Form className={css.form}>
             <div className={css.div}>
                 <label htmlFor={contactNameFieldId}>Name</label>
-                <Field className={css.input} type='tel' name='number' component='span' id={numberFieldId} placeholder="123-45-67" />
+                <Field className={css.input} type='tel' name='number' id={numberFieldId} placeholder="123-45-67" />
                 <ErrorMessage className={css.error} name='number' component='span'></ErrorMessage>
              </div>
              <button className={css.btn} type='submit'>Add contact</button>
