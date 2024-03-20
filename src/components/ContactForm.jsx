@@ -30,14 +30,19 @@ return (
         }}
     validationSchema={contactSchema}
     onSubmit={handleSubmit} >
-        <Form className={css.form}>
-            <div className={css.div}>
-                <label htmlFor={contactNameFieldId}>Name</label>
-                <Field className={css.input} type='tel' name='number' id={numberFieldId} placeholder="123-45-67" />
-                <ErrorMessage className={css.error} name='number' component='span'></ErrorMessage>
-             </div>
-             <button className={css.btn} type='submit'>Add contact</button>
-        </Form>
+          <Form className={css.form}>
+                <div className={css.div}>
+                    <label htmlFor={contactNameFieldId}>Name</label>
+                    <Field className={css.input} name='name' id={contactNameFieldId} placeholder="Name" />
+                    <ErrorMessage className={css.error} name='name' component='span'></ErrorMessage>
+                </div>
+                <div className={css.div}>
+                    <label htmlFor={numberFieldId}>Number</label>
+                    <Field className={css.input} type="tel" name='number' id={numberFieldId} placeholder="123-45-67" />
+                    <ErrorMessage className={css.error} name='number' component='span'></ErrorMessage>
+                </div>
+                <button className={css.btn} type='submit'>Add contact</button>
+            </Form>
     </Formik>
 )
 }
